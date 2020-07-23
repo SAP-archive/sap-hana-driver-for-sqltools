@@ -1,0 +1,8 @@
+{
+  "ui:order": ["server", "port", "database", "username", "password", "hanaOptions", "connectionTimeout"],
+  "password": { "ui:widget": "password" },
+  "connectionTimeout": {
+    "ui:help": "For more options add in 'hanaOptions' directly in the settings -  see https://help.sap.com/viewer/0eec0d68141541d1b07893a39944924e/2.0.02/en-US/4fe9978ebac44f35b9369ef5a4a26f4c.html"
+  }
+
+}

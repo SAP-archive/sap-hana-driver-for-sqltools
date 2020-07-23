@@ -1,0 +1,57 @@
+{
+  "name": "SAPHana",
+  "displayName": "SAPHana",
+  "description": "A driver to SAP HANA",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "publisher": "SAPOSS",
+  "license": "Apache-2.0",
+  "repository": {},
+  "bugs": {},
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint . --ext .ts --fix --ignore-path=.gitignore"
+  },
+  "keywords": [
+    "SAPHana",
+    "sqltools-driver"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "extensionDependencies": [
+    "mtxr.sqltools"
+  ],
+  "activationEvents": [
+    "*",
+    "onLanguage:sql",
+    "onCommand:sqltools.*"
+  ],
+  "main": "./out/extension.js",
+  "dependencies": {
+    "@sqltools/base-driver": "0.1.8",
+    "@sqltools/types": "0.1.5",
+    "uuid": "7.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^14.0.6",
+    "@types/react-native": "^0.62.12",
+    "@types/vscode": "^1.42.0",
+    "@types/webpack-env": "^1.15.2",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "3.6.1",
+    "eslint": "7.4.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "typescript": "3.9.7",
+    "vscode-languageclient": "^6.1.3"
+  }
+}

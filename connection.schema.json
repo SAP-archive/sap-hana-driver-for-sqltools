@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "server": {
+      "title": "HANA Server",
+      "type": "string",
+      "minLength": 1
+    },
+    "port": {
+      "title": "Server Port",
+      "type": "integer"
+      
+    },
+    "database": {
+      "title": "Schema",
+      "type": "string",
+      "minLength": 1
+    },
+    "username" : {
+      "title": "User name",
+      "type": "string",
+      "minLength": 1
+
+    },
+    "password": {
+      "title": "Password",
+      "type": "string",
+      "minLength": 1
+    },
+    "connectionTimeout": {
+      "title": "Connection Timeout",
+      "type": "integer",
+      "default": 30
+    },
+    "hanaOptions": {
+      "title": "Connection Options",
+      "type": "object",
+      "properties": {
+        "encrypt": {
+          "title": "Encrypted connection",
+          "type":"boolean",
+          "default": true
+        }, 
+        "sslValidateCertificate": {
+          "title": "Validate Server Certificate",
+          "type":"boolean",
+          "default": true
+        },
+        "sslCryptoProvider": {
+          "title": "SSL Crypto Provider",
+          "type":"string",
+          "default": "openssl"
+        },
+        "sslTrustStore": {
+          "title": "SSL Trust Store",
+          "type":"string"  
+        }
+      }
+    }
+
+
+  },
+  "required": [
+    "database",
+    "server",
+    "port",
+    "username",
+    "password"
+  ]
+}
