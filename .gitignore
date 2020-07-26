@@ -12,3 +12,5 @@ yarn-debug.log*
 yarn-error.log*
 
 yarn.lock
+
+sap-hana-driver-for-sqltools-*.vsix
