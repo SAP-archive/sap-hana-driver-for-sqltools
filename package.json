@@ -38,7 +38,7 @@
     "onLanguage:sql",
     "onCommand:sqltools.*"
   ],
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "dependencies": {
     "@sqltools/base-driver": "0.1.8",
     "@sqltools/types": "0.1.5",
@@ -56,11 +56,11 @@
     "eslint": "7.4.0",
     "eslint-plugin-eslint-comments": "3.2.0",
     "npm-run-all": "4.1.5",
-    "ts-loader": "^8.0.1",
+    "ts-loader": "8.0.1",
     "typescript": "3.9.7",
     "vsce": "1.77.0",
     "vscode-languageclient": "6.1.3",
-    "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "4.44.0",
+    "webpack-cli": "3.3.12"
   }
 }
