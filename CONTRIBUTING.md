@@ -15,4 +15,4 @@ The process (on master branch).
 - Inspect the [CircleCI `deploy` build](https://circleci.com/gh/SAP/sap-hana-driver-for-sqltools) for the latest version tag.
 - Inspect the ["Github Releases"][gh-releases] and ensure the `.vsix` archive is attached to the latest version release.
 
-[gh-releases]: https://github.com/SAP/vscode-mta-tools/releases
+[gh-releases]: https://github.com/SAP/sap-hana-driver-for-sqltools/releases
