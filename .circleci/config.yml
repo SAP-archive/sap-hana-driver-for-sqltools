@@ -1,16 +1,79 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1.6
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  build-node14:
+    docker:
+      - image: circleci/node:14-browsers
+    working_directory: ~/repo
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
+      - run: npm install
+      - run: npm run ci
+
+  build-node12:
+    docker:
+      - image: circleci/node:12-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run ci
+
+  build-node10:
+    docker:
+      - image: circleci/node:10-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run ci
+
+  prepare-vsix:
+    docker:
+      - image: circleci/node:12-browsers
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run ci
+      - persist_to_workspace:
+          root: "."
+          paths:
+            # https://golang.org/pkg/path/filepath/#Match
+            - sap-hana-driver-for-sqltools-*
+
+  deploy-gh-releases:
+    docker:
+      - image: circleci/golang:1.13
+    steps:
+      - attach_workspace:
+          at: ./dist
+      - run:
+          name: "Publish Release on GitHub"
+          command: |
+            go get github.com/tcnksm/ghr
+            VERSION=${CIRCLE_TAG}
+            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${VERSION} ./dist/
+
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  version: 2
+  voter:
+    jobs:
+      - build-node10
+      - build-node12
+      - build-node14
+  release:
+    jobs:
+      - prepare-vsix:
+          filters:
+            tags:
+              only: /^v[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
+      - deploy-gh-releases:
+          requires:
+            - prepare-vsix
+          filters:
+            tags:
+              only: /^v[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
