@@ -9,6 +9,17 @@ edit `connection.schema.json` and `ui.schema.json`.
 
 See https://react-jsonschema-form.readthedocs.io/en/latest/ for more instructions.
 
-## Publish the driver
+## Support
 
-See https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+Please open [issues](https://github.com/SAP/sap-hana-driver-for-sqltools/issues) on github.
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## License
+
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
+This file is licensed under the Apache Software License, v. 2 except as noted otherwise in the [LICENSE file](./LICENSE).
+
+
