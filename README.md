@@ -12,3 +12,5 @@ See https://react-jsonschema-form.readthedocs.io/en/latest/ for more instruction
 ## Publish the driver
 
 See https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+
+webpack branch
