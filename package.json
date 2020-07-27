@@ -17,7 +17,7 @@
     "ci": "npm-run-all lint compile package",
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "compile:watch": "tsc -watch -p ./",
     "lint": "eslint . --ext .ts --fix --ignore-path=.gitignore",
     "package": "vsce package ."
   },
