@@ -11,7 +11,7 @@
   "repository": "https://github.com/SAP/sap-hana-driver-for-sqltools",
   "bugs": {},
   "scripts": {
-    "version:suggest": "conventional-recommended-bump -preset=\"angular\"",
+    "version:suggest": "node ./scripts/version_suggest.js",
     "version": "npm run version:changelog -s && git add CHANGELOG.md",
     "version:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "ci": "npm-run-all lint compile package",
