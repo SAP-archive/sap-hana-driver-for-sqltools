@@ -1,6 +1,7 @@
-[![CircleCI](https://circleci.com/gh/sap-staging/sap-hana-driver-for-sqltools.svg?style=svg)](https://circleci.com/gh/sap-staging/sap-hana-driver-for-sqltools)
+[![CircleCI](https://circleci.com/gh/SAP/sap-hana-driver-for-sqltools.svg?style=svg)](https://circleci.com/gh/SAP/sap-hana-driver-for-sqltools)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![DependentBot](https://api.dependabot.com/badges/status?host=github&repo=SAP/sap-hana-driver-for-sqltools)](https://dependabot.com/)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/sap-hana-driver-for-sqltools)](https://api.reuse.software/info/github.com/SAP/sap-hana-driver-for-sqltools)
 
 # SAP HANA Driver for SQLTools
 A Visual Studio Code extension which extends [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with SAP HANA Database. It supports Tables and Views and running queries on a SAP HANA Database.
@@ -18,6 +19,8 @@ In the [SAP HANA Driver for SQLTools](https://marketplace.visualstudio.com/items
 3. Follow the instructions for installing an extension from a `.vsix` file in the [VSCode's guide](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix).
 
 ## Usage
+
+After installing the SAP HANA Driver for SQLTools, you will be able to create connections to SAP HANA Database, explore tables and views and run queries. For more information on how to use SQLTools please refer to [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
 
 ### Creating connection schema for the assistant
 
