@@ -5,7 +5,7 @@ module.exports = {
       {
         targets: {
           node: '8',
-        },
+        }, 
       },
     ],
   ],
