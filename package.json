@@ -18,6 +18,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "compile:watch": "tsc -watch -p ./",
+    "watch": "tsc -watch -p ./",
     "lint": "eslint . --ext .ts --fix --ignore-path=.gitignore",
     "package": "vsce package ."
   },
