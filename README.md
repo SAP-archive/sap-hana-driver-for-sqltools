@@ -22,13 +22,6 @@ In the [SAP HANA Driver for SQLTools](https://marketplace.visualstudio.com/items
 
 After installing the SAP HANA Driver for SQLTools, you will be able to create connections to SAP HANA Database, explore tables and views and run queries. For more information on how to use SQLTools please refer to [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
 
-### Creating connection schema for the assistant
-
-We are using `@rjsf/core` to render the forms, so in order to add you driver to the connection assistant,
-edit `connection.schema.json` and `ui.schema.json`.
-
-See https://react-jsonschema-form.readthedocs.io/en/latest/ for more instructions.
-
 ## Support
 
 Please open [issues](https://github.com/SAP/sap-hana-driver-for-sqltools/issues) on github.
