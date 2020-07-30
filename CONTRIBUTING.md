@@ -22,7 +22,7 @@ This is managed automatically via https://cla-assistant.io/ pull request voter.
 
 ### Initial Setup
 
-The initial setup is trivial:
+To perform setup:
 
 1. Clone this repositroy.
 2. Perfom `npm install`.
