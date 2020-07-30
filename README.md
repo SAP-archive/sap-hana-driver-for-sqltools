@@ -3,7 +3,7 @@
 [![DependentBot](https://api.dependabot.com/badges/status?host=github&repo=SAP/sap-hana-driver-for-sqltools)](https://dependabot.com/)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/sap-hana-driver-for-sqltools)](https://api.reuse.software/info/github.com/SAP/sap-hana-driver-for-sqltools)
 
-# SAP HANA Driver for SQLTools
+# Description
 A Visual Studio Code extension which extends the [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with the SAP HANA Database. It supports tables and views, as well as running queries on an SAP HANA Database.
 
 ## Installation

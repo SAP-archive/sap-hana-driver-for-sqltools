@@ -3,13 +3,32 @@
   "displayName": "SAP HANA Driver for SQLTools",
   "description": "A Visual Studio Code extension which extends SQLTools extension, with a driver to work with SAP HANA Database",
   "version": "0.2.0",
+  "publisher": "SAPOSS",
+  "icon": "icons/sap-hana-driver-for-sqltools.png",
+  "keywords": [
+    "SAPHana",
+    "sqltools-driver"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "license": "Apache-2.0",
+  "main": "./out/extension.js",
+  "extensionDependencies": [
+    "mtxr.sqltools"
+  ],
+  "activationEvents": [
+    "*",
+    "onLanguage:sql",
+    "onCommand:sqltools.*"
+  ],
+  "repository": "https://github.com/SAP/sap-hana-driver-for-sqltools",
   "engines": {
     "vscode": "^1.42.0"
   },
-  "publisher": "SAPOSS",
-  "license": "Apache-2.0",
-  "repository": "https://github.com/SAP/sap-hana-driver-for-sqltools",
-  "bugs": {},
   "scripts": {
     "version:suggest": "node ./scripts/version_suggest.js",
     "version": "npm run version:changelog -s && git add CHANGELOG.md",
@@ -22,25 +41,6 @@
     "lint": "eslint . --ext .ts --fix --ignore-path=.gitignore",
     "package": "vsce package ."
   },
-  "keywords": [
-    "SAPHana",
-    "sqltools-driver"
-  ],
-  "categories": [
-    "Programming Languages",
-    "Snippets",
-    "Formatters",
-    "Other"
-  ],
-  "extensionDependencies": [
-    "mtxr.sqltools"
-  ],
-  "activationEvents": [
-    "*",
-    "onLanguage:sql",
-    "onCommand:sqltools.*"
-  ],
-  "main": "./out/extension.js",
   "dependencies": {
     "@sqltools/base-driver": "0.1.8",
     "@sqltools/types": "0.1.5",
