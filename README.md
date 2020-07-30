@@ -4,7 +4,7 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/sap-hana-driver-for-sqltools)](https://api.reuse.software/info/github.com/SAP/sap-hana-driver-for-sqltools)
 
 # SAP HANA Driver for SQLTools
-A Visual Studio Code extension which extends [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with SAP HANA Database. It supports Tables and Views and running queries on a SAP HANA Database.
+A Visual Studio Code extension which extends the [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with the SAP HANA Database. It supports tables and views, as well as running queries on an SAP HANA Database.
 
 ## Installation
 
@@ -20,7 +20,7 @@ In the [SAP HANA Driver for SQLTools](https://marketplace.visualstudio.com/items
 
 ## Usage
 
-After installing the SAP HANA Driver for SQLTools, you will be able to create connections to SAP HANA Database, explore tables and views and run queries. For more information on how to use SQLTools please refer to [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
+After installing the SAP HANA Driver for SQLTools, you will be able to create connections to SAP HANA Database, explore tables and views, and run queries. For more information on how to use SQLTools please refer to [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
 
 ## Support
 
