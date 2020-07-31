@@ -1,8 +1,5 @@
 # Contribution Guide
 
-This is the common top level contribution guide for this mono-repo.
-A sub-package **may** have an additional `CONTRIBUTING.md` file, if needed.
-
 ## Legal
 
 All contributors must sign the CLA.
