@@ -6,6 +6,8 @@
 # Description
 A Visual Studio Code extension which extends the [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with the SAP HANA Database. It supports tables and views, as well as running queries on an SAP HANA Database.
 
+![](https://raw.githubusercontent.com/SAP/sap-hana-driver-for-sqltools/master/resources/readme/preview-sap-hana-driver-for-sqltools.gif)
+
 ## Installation
 
 ### From the VS Code Marketplace

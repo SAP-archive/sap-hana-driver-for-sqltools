@@ -6,6 +6,7 @@ Source: https://github.com/sap/sap-hana-driver-for-sqltools
 Files:
     src/*
     icons/*
+    resources/*/
     *.json
     *.md
     *.js
