@@ -1,3 +1,7 @@
+## [0.2.1](https://github.com/SAP/sap-hana-driver-for-sqltools/compare/v0.2.0...v0.2.1) (2020-08-04)
+
+
+
 # [0.2.0](https://github.com/SAP/sap-hana-driver-for-sqltools/compare/v0.1.0...v0.2.0) (2020-07-27)
 
 

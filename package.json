@@ -2,7 +2,7 @@
   "name": "sap-hana-driver-for-sqltools",
   "displayName": "SAP HANA Driver for SQLTools",
   "description": "A Visual Studio Code extension which extends SQLTools extension, with a driver to work with SAP HANA Database",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "SAPOSS",
   "icon": "icons/sap-hana-driver-for-sqltools.png",
   "keywords": [
