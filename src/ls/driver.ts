@@ -59,7 +59,7 @@ export default class SAPHana extends AbstractDriver<DriverLib, DriverOptions> im
       PORT: this.credentials.port,
       UID: this.credentials.username,
       PWD: this.credentials.password
-    }
+    };
     if (this.credentials.connectionTimeout && this.credentials.connectionTimeout > 0) {
       connOptions["CONNECTTIMEOUT"] = this.credentials.connectionTimeout * 1000;
     }
