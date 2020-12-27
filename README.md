@@ -2,7 +2,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![DependentBot](https://api.dependabot.com/badges/status?host=github&repo=SAP/sap-hana-driver-for-sqltools)](https://dependabot.com/)
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/sap-hana-driver-for-sqltools)](https://api.reuse.software/info/github.com/SAP/sap-hana-driver-for-sqltools)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/SAP/sap-hana-driver-for-sqltools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/SAP/sap-hana-driver-for-sqltools/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/SAP/sap-hana-driver-for-sqltools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/SAP/sap-hana-driver-for-sqltools/context:javascript)
 
 # Description
 A Visual Studio Code extension which extends the [SQLTools extension](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools), with a driver to work with the SAP HANA Database. It supports tables and views, as well as running queries on an SAP HANA Database.
