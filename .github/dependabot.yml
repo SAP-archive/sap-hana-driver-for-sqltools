@@ -1,0 +1,54 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+    timezone: Etc/UCT
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.22
+    - 14.14.25
+    - 14.14.27
+    - 14.14.28
+    - 14.14.30
+    - 14.14.31
+    - 14.14.32
+    - 14.14.33
+    - 14.14.34
+    - 14.14.35
+    - 14.14.36
+    - 14.14.37
+    - 14.14.39
+    - 14.14.41
+    - 15.0.0
+  - dependency-name: "@types/react-native"
+    versions:
+    - 0.63.46
+    - 0.63.48
+    - 0.63.49
+    - 0.63.50
+    - 0.63.51
+    - 0.63.52
+    - 0.64.0
+    - 0.64.1
+    - 0.64.2
+  - dependency-name: "@babel/preset-env"
+    versions:
+    - 7.12.11
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.10
+    - 7.13.12
+    - 7.13.5
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: "@types/vscode"
+    versions:
+    - 1.52.0
+    - 1.53.0
+    - 1.54.0
